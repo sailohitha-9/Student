@@ -1,1 +1,142 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    color: #2563eb;
+}
+
+header p {
+    color: #6b7280;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+#addTaskBtn {
+    background: #2563eb;
+    color: white;
+}
+
+#addTaskBtn:hover {
+    background: #1d4ed8;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.filter.active {
+    background: #2563eb;
+    color: white;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #9ca3af;
+    padding: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: right;
+    color: #6b7280;
+}
+
+@media (max-width: 600px) {
+    .task-input {
+        flex-direction: column;
+    }
+
+    #addTaskBtn {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
