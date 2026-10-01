@@ -1,1 +1,46 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Organize your assignments, study sessions, and deadlines.</p>
+        </header>
+
+        <section class="task-input">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+            >
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+        <section class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="active">Active</button>
+            <button class="filter" data-filter="completed">Completed</button>
+        </section>
+
+        <section>
+            <ul id="taskList"></ul>
+            <p id="emptyMessage">No tasks yet. Add your first task!</p>
+        </section>
+
+        <footer>
+            <span id="taskCount">0 tasks</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
